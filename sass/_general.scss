@@ -1,0 +1,222 @@
+.row.row-collapse{
+  margin:0;
+  .col-xs-1,
+  .col-xs-2,
+  .col-xs-3,
+  .col-xs-4,
+  .col-xs-5,
+  .col-xs-6,
+  .col-xs-7,
+  .col-xs-8,
+  .col-xs-9,
+  .col-xs-10,
+  .col-xs-11,
+  .col-xs-12,
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12,
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12,
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 0;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+  background-color: lighten($btn-primary-bg, 10%);
+  border-color: lighten($btn-primary-border, 10%);
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
+  background-color: lighten($btn-success-bg, 10%);
+  border-color: lighten($btn-success-border, 10%);
+}
+
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
+  background-color: lighten($btn-info-bg, 10%);
+  border-color: lighten($btn-info-border, 10%);
+}
+
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active {
+  background-color: lighten($btn-warning-bg, 10%);
+  border-color: lighten($btn-warning-border, 10%);
+}
+
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active {
+  background-color: lighten($btn-danger-bg, 10%);
+  border-color: lighten($btn-danger-border, 10%);
+}
+
+.btn-general{
+  color: $btn-general-color;
+  background-color: $btn-general-bg;
+  border-color: $btn-general-border;
+  @include box-shadow(rgba(255, 255, 255, 0.55) 0 0 0 4px); 
+}
+
+.btn-general:hover, .btn-general:focus {
+  color: $btn-general-color;
+  background-color: lighten($btn-general-bg, 5%);
+  border-color: lighten($btn-general-border, 5%);
+  @include box-shadow(rgba(255, 255, 255, 0.75) 0 0 0 4px);     
+}
+
+.btn-general:active, .btn-general.active {
+  color: $btn-general-color;
+  background-color: darken($btn-general-bg, 10%);
+  border-color: darken($btn-general-border, 10%);
+  @include box-shadow(rgba(255, 255, 255, 0.35) 0 0 0 4px);  
+}
+
+.btn-stroke{  
+  border: 2px solid #FFF !important;
+  @include box-shadow(#AAA 0 0 3px);
+  outline:none;
+  &:hover, &:focus {
+    outline:none;
+  }  
+  &:active,&:active:focus{
+    outline:none;
+    @include box-shadow(#AAA 0 0 3px, inset 0 3px 5px rgba(0, 0, 0, 0.125));
+  }
+}
+ .btn-bron{
+  color: $btn-general-color;
+  background-color: $btn-general-bg;
+  border: 2px solid #FFF !important;
+  @include box-shadow(#AAA 0 0 3px);
+  outline:none;
+  .btn-bron-lightbulb-green, .btn-bron-lightbulb-orange{
+    display: inline-block;
+    position:relative;
+    top: 3px;
+    width:20px;
+    height:20px;
+    margin-left: 5px;
+    border: 1px solid #FFF;
+    @include border-radius(50%);        
+  }
+  .btn-bron-lightbulb-green{
+    background:lighten($brand-success, 20%);        
+  }
+  .btn-bron-lightbulb-orange{
+    background:lighten($brand-success2, 20%);
+    
+  }
+  &:hover, &:focus {
+    color: $btn-general-color;
+    background-color: lighten($btn-general-bg, 5%);
+    outline:none;
+  }
+  
+  &:active,&:active:focus{
+    color: $btn-general-color;
+    background-color: darken($btn-general-bg, 10%);
+    outline:none;
+    @include box-shadow(#AAA 0 0 3px, inset 0 3px 5px rgba(0, 0, 0, 0.125));
+  }
+ }
+
+.dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+
+.dropdown-menu .divider {
+  height: 1px;
+  margin: 9px 0;
+}
+
+
+.dropdown-menu.dropdown-menu-mini > li > a {
+  padding: 4px 10px;
+  font-size: 12px;
+  padding-right: 110px;
+}
+
+a.btn{
+    text-decoration: none;
+}
+
+.btn.disabled {
+  pointer-events: auto;
+}
+
+.help-popover{
+  cursor:pointer;
+}
+
+
+.dropdown-toggle{
+  cursor: pointer;
+}
+
+.dropdown-toggle:focus {
+  outline: 0;
+}
+
+
+.help-popover-ico{
+  width:10px;
+  height:10px;
+  cursor: pointer;
+  display: inline-block;
+  background: transparent url('/img/help-popover-ico.png') center center no-repeat;
+}
+
+.form-control.disabled {
+  cursor: not-allowed;
+  background-color: #EEE;
+}
+
+.progress-bar {
+  padding: 0 5px;
+  text-align:left;
+  white-space:nowrap;
+}
+
+.list-group-item-success {
+  background-color: $btn-success-bg;
+  color: lighten($btn-success-border, 80%);
+}
+
+#checkInOutRealNew{
+  background: url("/i/calendar.png") no-repeat scroll 10px 7px #FFF;
+  padding-left: 30px;
+  cursor:pointer;
+}

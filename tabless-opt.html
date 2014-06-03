@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html> 
+    <head>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+	<div id="wrapper-demo">
+
+		<h3>Таблица с сортировкой по видимым данным</h3>
+		<table id="table-sort-td" class="table table-striped">
+			<thead>
+				<tr>
+					<th>Inv No</th>
+					<th>Date</th>
+					<th>Client</th>
+					<th>Amount</th>
+					<th>Tax</th>
+					<th>Total</th>
+					<th>Notes</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+			<tfoot>
+				<tr>
+					<td colspan="7">
+						<a class="first-page btn btn-inverse btn-small" href="#">first page</a> <span>|</span>
+						<a class="previous-page btn btn-inverse btn-small" href="#">previous page</a>
+						<input value="1" class="input-page span1" type="text">
+						<span>
+							of <span class="table-pages"></span> pages |
+						</span>
+						<a class="next-page btn btn-inverse btn-small" href="#">next page</a> <span>|</span>
+						<a class="last-page btn btn-inverse btn-small" href="#">last page</a>
+						<select class="select-show-rows" class="span2">
+							<option selected value="5">5</option>
+							<option value="10">10</option>
+							<option value="15">15</option>
+						</select>
+						<span>
+								View <span class="table-view-start"></span> - <span class="table-view-end"></span> of <span class="table-view-amount"></span>
+						</span>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+
+		<h3>Таблица с сортировкой по всем данным, не только по видимым</h3>
+		<table id="table-sort-data" class="table table-striped">
+			<thead>
+				<tr>
+					<th>Inv No</th>
+					<th>Date</th>
+					<th>Client</th>
+					<th>Amount</th>
+					<th>Tax</th>
+					<th>Total</th>
+					<th>Notes</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+			<tfoot>
+				<tr>
+					<td colspan="7">
+						<a class="first-page btn btn-inverse btn-small" href="#">first page</a> <span>|</span>
+						<a class="previous-page btn btn-inverse btn-small" href="#">previous page</a>
+						<input value="1" class="input-page span1" type="text">
+						<span>
+							of <span class="table-pages"></span> pages |
+						</span>
+						<a class="next-page btn btn-inverse btn-small" href="#">next page</a> <span>|</span>
+						<a class="last-page btn btn-inverse btn-small" href="#">last page</a>
+						<select class="select-show-rows" class="span2">
+							<option selected value="5">5</option>
+							<option value="10">10</option>
+							<option value="15">15</option>
+						</select>
+						<span>
+								View <span class="table-view-start"></span> - <span class="table-view-end"></span> of <span class="table-view-amount"></span>
+						</span>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+		Проект на GitHub: <a target="blank" href="https://github.com/Krivega/tabless">https://github.com/Krivega/tabless</a>. Описание в блоге: <a href="http://krivega.com/#blog">http://krivega.com/#blog</a>
+	</div>
+        <script src="js/vendor/jquery-1.9.0.min.js"></script>
+        <script src="js/tabless.js"></script>
+    </body>
+</html>
