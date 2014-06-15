@@ -1,5 +1,5 @@
 ﻿//The MIT License (MIT)
-// v 0.9
+// ver. 1.0
 //Copyright (c) 2014 Krivega Dmitriy http://krivega.com
 
 var TableAv = (function($, eventDisp) {
@@ -611,11 +611,10 @@ var TableAv = (function($, eventDisp) {
 				(endYear === year && year === startYear && endMon > mon && mon === startMon && day >= startDay) ||
 				(endYear === year && year === startYear && endMon === mon && mon > startMon && endDay >= day) ||
 				(endYear === year && year === startYear && endMon > mon && mon > startMon) ||
-
 				(endYear === year && year > startYear && endMon === mon && endDay >= day) ||
 				(endYear >= year && year >= startYear && endMon < mon && mon === startMon && day >= startDay) ||
 				(endYear > year && year === startYear && mon > startMon) ||
-				(endYear > year && year === startYear && mon <= startMon && day >= startDay) ||
+				(endYear > year && year === startYear && mon === startMon && day >= startDay) ||
 				(endYear === year && year > startYear && endMon > mon)
 			) {
 				if (this.selectedRooms[idRoom]) {
